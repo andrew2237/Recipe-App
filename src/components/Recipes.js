@@ -85,10 +85,17 @@ export const Recipes = () => {
             }}
           />
           <input className="submitinput" type="submit" value="Search" />
-          <select className="options">
+
+          <select
+            className="options"
+            value={mealType}
+            onChange={(e) => {
+              setmealType(e.target.value);
+            }}
+          >
             <option onClick={() => setmealType("Breakfast")}>Breakfast</option>
             <option onClick={() => setmealType("Lunch")}>Lunch</option>
-            <option onClick={() => setmealType("Dinner")}>Dinner</option>
+            <option onClick={() => setmealType("Snack")}>Snack</option>
           </select>
         </form>
         <div className="cart">
