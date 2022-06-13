@@ -5,7 +5,7 @@ const Recipe = ({ recipe }) => {
     window.open(recipe.url);
   };
   return (
-    recipe.image.match(/\.(jpeg|jpg|gif|png)$/) != null && (
+  
       <div className="recipecart">
         <img
           className="recipeimage"
@@ -18,7 +18,7 @@ const Recipe = ({ recipe }) => {
           More Information
         </button>
       </div>
-    )
+    
   );
 };
 export default Recipe;
